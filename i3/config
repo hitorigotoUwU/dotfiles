@@ -222,6 +222,15 @@ for_window [class=".*"] border pixel 2
 gaps inner 8
 gaps outer 8
 
+
+#extra config shit
+
+#NOTE TO FUTURE ME:
+#I KNOW YOU WILL FORGET THIS SO I WILL LEAVE THIS HERE
+#I3 DOES SHIT OUT OF ORDER FOR SOME REASON
+#IF A COMMAND IS NOT EXECUTING PROPERLY, THATS PROLLY WHY
+#USE SLEEP OR SOME SHIT IDK
+
 #stop discord from crashing
 exec --no-startup-id dunst
 
@@ -235,7 +244,10 @@ exec feh --bg-scale ~/wallpapers/Jeanne.png
 exec xrandr --auto
 
 #xrandr part 2
-exec_always xrandr --output HDMI-1-0 --left-of eDP-1
+exec_always --no-startup-id " sleep 2;  xrandr --output HDMI-1-0 --left-of eDP-1 "
+
+#kill i3bars
+exec killall i3bars
 
 #kill all running instances of polybar
 exec killall polybar
@@ -243,5 +255,5 @@ exec killall polybar
 #rerun polybar
 exec_always polybar
 
-#kill i3bar
-exec killall i3bar
+#make sure that keyboard repeat rate isnt incredibly sluggish
+exec_always r rate 300 50
