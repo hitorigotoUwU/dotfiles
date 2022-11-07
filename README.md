@@ -1,8 +1,2 @@
-## i3 dotfiles
-these are my i3 dotfiles. they're shit. don't use them. they are only here so i don't have to spend an hour reconfiguring i3 if i break something
-
-heres what it looks like if you are curious though
-![image](https://user-images.githubusercontent.com/92250654/160986305-a6b11a77-abe7-437c-b664-8a28ef7dece6.png)
-#### it doesn't actually look like this anymore really, just can't be bothered to update the image
-
-*arch btw*
+## dotfiles
+these are my dotfiles. they're shit. don't use them. they are only here so i don't have to spend an hour reconfiguring my system if i break something
