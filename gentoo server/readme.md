@@ -1,0 +1,1 @@
+mainly just the config files for my home server, optimised for being very minimal :p
